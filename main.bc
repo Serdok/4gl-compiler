@@ -1,0 +1,38 @@
+function f()   | function without return type is of type void
+{
+        return | no value is returned
+}
+
+function long  return.as.long(   | function of type long
+   boolean  aConvert,
+   double   aDouble
+)
+{
+   if aConvert then
+      long  lLong
+
+      lLong = aDouble   | assignment of double value to long variable.
+                        | implicit double to long type conversion is done.
+
+      return(lLong)     | long value returned from long function
+   else
+      return(aDouble)   | double value returned from long function
+   endif
+}
+
+function double  return.as.double(   | function of type double
+   boolean  aConvert,
+   long     aLong
+)
+{
+   if aConvert then
+      double   lDouble
+
+      lDouble  = aLong  | assignment of long value to double variable.
+                        | implicit long to double type conversion is done.
+
+      return(lDouble)   | double value returned from double function
+   else
+      return(aLong)     | long value returned from double function
+   endif
+}
